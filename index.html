@@ -5,12 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Visitor Intelligence Bot</title>
 
-<!-- ===== DARK UI STYLES ===== -->
 <style>
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #0d0d0d;
+        background: #0a0a0a;
         color: #e0e0e0;
     }
 
@@ -24,18 +23,19 @@
     h1 {
         margin: 0;
         font-size: 26px;
-        color: #00d4ff;
+        color: #00eaff;
         letter-spacing: 1px;
+        font-weight: bold;
     }
 
     .container {
         max-width: 900px;
         margin: 40px auto;
         padding: 20px;
-        background: #111;
+        background: #121212;
         border: 1px solid #222;
         border-radius: 8px;
-        box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.08);
     }
 
     p {
@@ -49,35 +49,33 @@
         margin-top: 40px;
         padding: 20px;
         font-size: 14px;
-        color: #555;
+        color: #777;
     }
 </style>
 </head>
 
 <body>
 
-<!-- ===== PAGE HEADER ===== -->
 <header>
     <h1>Visitor Intelligence Bot</h1>
 </header>
 
-<!-- ===== PAGE CONTENT ===== -->
 <div class="container">
     <p>Welcome! You're now interacting with your custom-built Visitor Intelligence Bot.</p>
-    <p>This page is used only for testing and demo purposes. The chat widget in the bottom-right corner will help you interact with your Zobot.</p>
+    <p>This page is created for testing and demo purposes. The chat widget at the bottom-right corner is your Zobot.</p>
 </div>
 
 <footer>© 2025 Visitor Intelligence Bot</footer>
 
-<!-- ===== ZOHO ZOBOT SCRIPT (YOUR EXACT CODE) ===== -->
+<!-- Your Zobot Script -->
 <script>
     window.$zoho = window.$zoho || {};
-    $zoho.salesiq = $zoho.salesiq || {ready:function(){}};
+    $zoho.salesiq = $zoho.salesiq || { ready: function(){} };
 </script>
 
 <script id="zsiqscript"
-src="https://salesiq.zohopublic.in/widget?wc=siq6cc7490b9d1c9b6114ef4794211b11f3c24e2496ffe865f11887bf991cbccd9e"
-defer>
+    src="https://salesiq.zohopublic.in/widget?wc=siq6cc7490b9d1c9b6114ef4794211b11f3c24e2496ffe865f11887bf991cbccd9e"
+    defer>
 </script>
 
 </body>
