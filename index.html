@@ -1,20 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Zoho SalesIQ Test</title>
-  </head>
-  <body>
-    <h2>Testing Zoho Zobot Chat Widget</h2>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Visitor Intelligence Bot</title>
 
-    <script>
-window.$zoho=window.$zoho || {};
-$zoho.salesiq=$zoho.salesiq||{ready:function(){}}
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0d0d0d;
+        color: #e0e0e0;
+    }
+
+    header {
+        padding: 25px;
+        text-align: center;
+        background: #111;
+        border-bottom: 1px solid #333;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 26px;
+        color: #00d4ff;
+        letter-spacing: 1px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #111;
+        border: 1px solid #222;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #cfcfcf;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        font-size: 14px;
+        color: #555;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Visitor Intelligence Bot</h1>
+</header>
+
+<div class="container">
+    <p>Welcome! You're now interacting with your custom-built Visitor Intelligence Bot.</p>
+    <p>This page is used only for testing and demo purposes. The chat widget in the bottom-right corner will help you interact with your Zobot.</p>
+</div>
+
+<footer>© 2025 Visitor Intelligence Bot</footer>
+
+<!-- Zoho Zobot Script -->
+<script>
+    window.$zoho = window.$zoho || {};
+    $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
 </script>
-
 <script id="zsiqscript"
 src="https://salesiq.zohopublic.in/widget?wc=siq6cc7490b9d1c9b6114ef4794211b11f3c24e2496ffe865f11887bf991cbccd9e"
-defer>
-</script>
+defer></script>
 
-  </body>
+</body>
 </html>
