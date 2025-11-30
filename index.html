@@ -9,7 +9,7 @@
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #0a0a0a;
+        background: #0d0d0d;
         color: #e0e0e0;
     }
 
@@ -23,19 +23,18 @@
     h1 {
         margin: 0;
         font-size: 26px;
-        color: #00eaff;
+        color: #00d4ff;
         letter-spacing: 1px;
-        font-weight: bold;
     }
 
     .container {
         max-width: 900px;
         margin: 40px auto;
         padding: 20px;
-        background: #121212;
+        background: #111;
         border: 1px solid #222;
         border-radius: 8px;
-        box-shadow: 0 0 25px rgba(0, 255, 255, 0.08);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
     }
 
     p {
@@ -49,7 +48,7 @@
         margin-top: 40px;
         padding: 20px;
         font-size: 14px;
-        color: #777;
+        color: #555;
     }
 </style>
 </head>
@@ -62,20 +61,33 @@
 
 <div class="container">
     <p>Welcome! You're now interacting with your custom-built Visitor Intelligence Bot.</p>
-    <p>This page is created for testing and demo purposes. The chat widget at the bottom-right corner is your Zobot.</p>
+    <p>This page is used only for testing and demo purposes. The chat widget in the bottom-right corner will help you interact with your Zobot.</p>
 </div>
 
 <footer>© 2025 Visitor Intelligence Bot</footer>
 
-<!-- Your Zobot Script -->
+<!-- ----------------------------- -->
+<!-- ⭐ YOUR CUSTOM ZOBOT SCRIPT ⭐ -->
+<!-- ----------------------------- -->
+
 <script>
     window.$zoho = window.$zoho || {};
     $zoho.salesiq = $zoho.salesiq || { ready: function(){} };
 </script>
 
-<script id="zsiqscript"
+<script 
+    id="zsiqscript"
     src="https://salesiq.zohopublic.in/widget?wc=siq6cc7490b9d1c9b6114ef4794211b11f3c24e2496ffe865f11887bf991cbccd9e"
     defer>
+</script>
+
+<!-- ⭐ You can add your own extra JS logic below ⭐ -->
+<script>
+    // Example: Detect when bot is loaded
+    $zoho.salesiq.ready(function() {
+        console.log("Your Visitor Intelligence Bot is Loaded Successfully!");
+        // Add your own additional logic here if needed  
+    });
 </script>
 
 </body>
