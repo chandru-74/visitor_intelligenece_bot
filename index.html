@@ -5,110 +5,76 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Visitor Intelligence Bot</title>
 
-<!-- ======= DARK THEME CSS ======= -->
+<!-- ===== DARK UI STYLES ===== -->
 <style>
     body {
         margin: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
-        background: #0b0b0b;
-        color: #e6e6e6;
+        font-family: Arial, sans-serif;
+        background: #0d0d0d;
+        color: #e0e0e0;
     }
 
-    /* HEADER */
     header {
-        padding: 28px;
+        padding: 25px;
         text-align: center;
         background: #111;
-        border-bottom: 1px solid #222;
-        box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+        border-bottom: 1px solid #333;
     }
 
     h1 {
         margin: 0;
-        font-size: 28px;
-        font-weight: 600;
-        color: #00eaff;
-        letter-spacing: 0.5px;
+        font-size: 26px;
+        color: #00d4ff;
+        letter-spacing: 1px;
     }
 
-    /* PAGE BODY */
     .container {
         max-width: 900px;
-        margin: 50px auto;
-        padding: 30px;
-        background: #121212;
-        border: 1px solid #1e1e1e;
-        border-radius: 10px;
-        box-shadow: 0 0 25px rgba(0, 255, 255, 0.08);
-    }
-
-    .container h2 {
-        color: #00eaff;
-        margin-bottom: 20px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #111;
+        border: 1px solid #222;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
     }
 
     p {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 1.7;
-        color: #d4d4d4;
-        margin-bottom: 15px;
+        color: #cfcfcf;
     }
 
-    /* FOOTER */
     footer {
         text-align: center;
+        margin-top: 40px;
         padding: 20px;
         font-size: 14px;
-        color: #666;
-        margin-top: 50px;
-    }
-
-    /* HOVER EFFECT */
-    .glow {
-        color: #00eaff;
-        text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
-        transition: 0.3s;
-    }
-
-    .glow:hover {
-        text-shadow: 0 0 15px rgba(0, 255, 255, 1);
+        color: #555;
     }
 </style>
-
 </head>
 
 <body>
 
-<!-- ======= HEADER ======= -->
+<!-- ===== PAGE HEADER ===== -->
 <header>
-    <h1 class="glow">Visitor Intelligence Bot</h1>
+    <h1>Visitor Intelligence Bot</h1>
 </header>
 
-<!-- ======= MAIN CONTENT ======= -->
+<!-- ===== PAGE CONTENT ===== -->
 <div class="container">
-    <h2>Welcome 👋</h2>
-    <p>You are now interacting with your custom-built <strong>Visitor Intelligence Bot</strong>.</p>
-    <p>
-        This test webpage allows you to verify your bot’s chat flow, UI behavior, and overall
-        customer experience exactly as it will appear on a real website.
-    </p>
-    <p>
-        Look in the <strong>bottom-right corner</strong> 👇 — your Zobot will appear there.
-    </p>
+    <p>Welcome! You're now interacting with your custom-built Visitor Intelligence Bot.</p>
+    <p>This page is used only for testing and demo purposes. The chat widget in the bottom-right corner will help you interact with your Zobot.</p>
 </div>
 
-<!-- ======= FOOTER ======= -->
-<footer>
-    © 2025 Visitor Intelligence Bot • All Rights Reserved
-</footer>
+<footer>© 2025 Visitor Intelligence Bot</footer>
 
-<!-- ======= ZOHO ZOBOT SCRIPT (LIVE BOT) ======= -->
+<!-- ===== ZOHO ZOBOT SCRIPT (YOUR EXACT CODE) ===== -->
 <script>
     window.$zoho = window.$zoho || {};
-    $zoho.salesiq = $zoho.salesiq || { ready: function(){} };
+    $zoho.salesiq = $zoho.salesiq || {ready:function(){}};
 </script>
 
-<!-- IMPORTANT: This is your actual bot script -->
 <script id="zsiqscript"
 src="https://salesiq.zohopublic.in/widget?wc=siq6cc7490b9d1c9b6114ef4794211b11f3c24e2496ffe865f11887bf991cbccd9e"
 defer>
